@@ -1,0 +1,347 @@
+@font-face {
+  font-family: "Myriad Pro Thin";
+  src: url("../assets/fonts/MyriadPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../assets/fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Semi-Bold";
+  src: url("../assets/fonts/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+
+body {
+
+  z-index: -10;
+}
+/* BACKGROUND------------------------------------------------------------- */
+#body_back {
+  background-color: black;
+}
+
+.shape-1{
+height: 70vh;
+width: 20vw;
+border-radius: 50%;
+background: rgb(250,245,223);
+background: linear-gradient(36deg, rgba(250,245,223,0.7077205882352942) 19%, rgba(255,204,105,0.6713060224089635) 100%);
+position: absolute;
+top: 5%;
+right: -7%;
+transform: rotate(10deg);
+filter: blur(70px);
+z-index: -10;
+}
+
+ .shape-2 {
+height: 40vh;
+width: 30vw;
+opacity: 0.5;
+border-radius: 50%;
+background-color: #fbaf23;
+position: absolute;
+bottom: 1%;
+right: -10%;
+filter: blur(80px);
+z-index: -10;
+}
+
+.shape-4 {
+  height: 20vh;
+  width: 65vw;
+  background: rgb(250,245,223);
+  background: linear-gradient(36deg, rgba(250,245,223,0.7077205882352942) 19%, rgba(255,204,105,0.6713060224089635) 100%);
+  position: absolute;
+  top: 12%;
+  right: 18%;
+  filter: blur(80px);
+  z-index: -10;
+  }
+
+.shape-5 {
+  height: 30vh;
+  width: 30vw;
+  opacity: 1;
+  border-radius: 50%;
+  background: rgba(255, 248, 218, 0.708) 19%;
+  background: linear-gradient(36deg, rgba(250, 218, 76, 0.708) 19%, rgba(255,204,105,0.6713060224089635) 100%);
+  position: absolute;
+  transform: rotate(20deg);
+  top: 5%;
+  left: 10%;
+  filter: blur(110px);
+  z-index: -10;
+}
+
+.shape-6 {
+  height: 20vh;
+  width: 20vw;
+  opacity: 1;
+  border-radius: 50%;
+  background: linear-gradient(36deg, rgba(250, 218, 76, 0.708) 19%, rgba(255,204,105,0.6713060224089635) 100%);
+  position: absolute;
+  bottom: -3%;
+  left: 6%;
+  filter: blur(80px);
+  z-index: -10;
+} 
+
+.shape-7 {
+  height: 65vh;
+  width: 48vw;
+  opacity: 0.6;
+  border-radius: 50%;
+  background: linear-gradient(36deg, rgba(250,245,223,0.7077205882352942) 19%, rgba(255,204,105,0.6713060224089635) 100%);
+  position: absolute;
+  transform: rotateX(120deg);
+  top: -20%;
+  right: 59%;
+  filter: blur(80px);
+  z-index: -10;
+}
+
+/* LEFT------------------------------------------------------------- */
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+}
+
+.container{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+} 
+
+.content {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  justify-content: space-between;
+}
+
+.logo-container {
+  height: 20vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+#logo {
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: 90;
+  filter: drop-shadow(-0.3rem 0rem 1rem rgb(241, 255, 255));
+}
+
+.app-container {
+  height: 50vh;
+  width: 100vw;
+  background-color: transparent;
+  position: relative;
+}
+
+#app {
+  object-fit: contain;
+  height: 90%;
+  width: auto;
+  position: absolute;
+  left: -15%;
+  bottom: 10%;
+  z-index: -11;
+}
+
+#copy {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 23px;
+  line-height: 1.2;
+  font-family: "Myriad Pro Thin";
+  font-weight: 200;
+  text-align: center;
+  color: aliceblue;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  background-color: transparent;
+}
+
+#copy span {
+  font-family: "Myriad Pro Regular";
+}
+
+#cta button{
+padding: 3.2% 12%;
+border-radius: 25px;
+outline: none;
+border: none;
+color: white;
+font-family: "Myriad Pro Semi-Bold";
+background-color: rgb(255, 128, 0);
+filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.961));
+}
+
+/* TOP------------------------------------------------------------- */
+/* RIGHT------------------------------------------------------------- */
+.body_right {
+  background-color: transparent;
+}
+
+.container-right {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  background-color: transparent;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Myriad Pro Regular";
+  color: white;
+  font-size: 35px;
+  justify-content: center;
+  margin: 7% 0 2% 0;
+}
+
+h1 span {
+  font-family: "Myriad Pro Thin";
+  font-size: 30px;
+}
+#cta-top {
+  text-align: center;
+}
+
+#cta-top button{
+width: 25%;
+padding: 1.4% 3%;
+margin: auto 0;
+align-items: center;
+border-radius: 25px;
+outline: none;
+border: none;
+color: white;
+font-family: "Myriad Pro Semi-Bold";
+background-color: rgb(255, 128, 0);
+filter: drop-shadow(0 0 0.1rem rgba(44, 30, 30, 0.661));
+}
+
+h3 {
+  text-align: center;
+  font-family: "Myriad Pro Regular";
+  color: white;
+  font-size: 15px;
+  margin-bottom: 5%;
+}
+
+.atmos-container {
+  height: 60vh;
+  width: 100vw;
+  /* background-color: rgb(153, 255, 0); */
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.atmos-container > * {
+  height: 22%;
+  min-width: 110px;
+  background-color: rgba(255, 255, 255, 0.311);
+  border-radius: 10px;
+/* filter: blur(1px) */
+}
+#icons {
+  height: 45%;
+  width: auto;
+  object-fit: contain;
+  z-index: 5;
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+
+#shadow {
+  height: 51px;
+  width: 51px;
+  position: absolute;
+  left: 23%;
+  top: 14%;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 50%;
+}
+#scene-1, #scene-2, #scene-3, #scene-4 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: "Myriad Pro Regular";
+  color: white;
+  font-size: 13px;
+  transition: all .4s ease-in-out; 
+}
+
+#scene-1.hover {
+  background: rgb(250,245,223);
+  background: linear-gradient(36deg, rgba(250,245,223,0.7077205882352942) 19%, rgba(255,204,105,0.6713060224089635) 100%);
+  filter: drop-shadow(-15px -15px 35px rgba(254, 189, 9, 0.61)) drop-shadow(15px 15px 35px rgba(254, 203, 34, 0.213));
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+#scene-2.hover {
+  background: rgb(230,249,255);
+  /* background: url(/banner/assets/lente.png) blur(15px);*/
+  background: linear-gradient(36deg, rgba(239, 251, 255, 0.553) 9%, rgba(255,173,209,0.4542191876750701) 91%);
+  filter: drop-shadow(-15px -15px 65px rgba(253, 137, 245, 0.713)) drop-shadow(15px 15px 55px rgba(193, 245, 237, 0.213));
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transform: scale(1.02); 
+}
+
+#scene-3.hover {
+  background: rgb(131,58,180);
+  /* background-image: url(/banner/assets/savane.png) blur(15px); */
+  background: linear-gradient(32deg, rgba(131,58,180,0.18335084033613445) 0%, rgba(255, 156, 75, 0.341) 50%, rgba(252,176,69,0.6839110644257703) 100%);
+  filter: drop-shadow(-15px -15px 55px rgba(255, 232, 178, 0.848)) drop-shadow(15px 15px 55px rgba(255, 228, 173, 0.864));
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+#scene-4.hover {
+background: rgb(63,241,255);
+/* background: url(/banner/assets/samara.png) blur(15px) ; */
+background: linear-gradient(36deg, rgba(63,241,255,0.2550595238095238) 0%, rgba(193, 255, 37, 0.368) 100%);
+filter: drop-shadow(-15px -15px 55px rgba(254, 255, 222, 0.875)) drop-shadow(15px 15px 55px rgba(107, 255, 208, 0.622));
+box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+cursor: pointer;
+z-index: 1;
+transform: scale(1.02);
+}
+
+@media screen and (min-width: 360px) {
+  #app {
+    left: 30px
+  }
+}
+
+@media screen and (max-width: 250px) {
+
+  #app {
+    left: -10%;
+    top: 20%;
+    height: 70%
+  }
+
+#copy {
+  font-size: 15px;
+}
+}
